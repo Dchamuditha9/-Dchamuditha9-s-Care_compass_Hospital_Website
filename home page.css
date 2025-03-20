@@ -1,0 +1,470 @@
+/* 🌟 General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 🌟 Header Section */
+header {
+    background-color: #04172b;
+    color: white;
+    text-align: left;
+    padding:20px;
+    position: relative;
+    z-index: 50;
+}
+.slogan {
+    font-size:2.0em; /* Adjust the font size as needed */
+    color: white;
+    font-weight: bold;
+    text-align: right;
+    margin-top: -100px; /* Adjust this value to reduce the space */
+}
+
+
+/* 🌟 Navigation Bar (Floating) */
+nav {
+    position: fixed;
+    top: 20px; /* Distance from the top of the screen */
+    right: 20px; /* Distance from the right of the screen */
+    background-color: #04172b;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1000; /* Ensures navigation stays above other content */
+}
+
+nav ul {
+    list-style-type: none; /* Removes bullets from the list */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Aligns the links horizontally */
+}
+
+nav ul li {
+    margin-right: 15px; /* Adds space between menu items */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #003f7f;
+    border-radius: 5px;
+}
+
+
+/* 🌟 Main Content */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌟 Buttons */
+button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* 🌟 Footer */
+footer {
+    background-color: #04172b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+/* Full-Screen Carousel Container */
+.carousel {
+    position: relative;
+    width: 100vw; /* Full screen width */
+    height: 60vh; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+/* Image Wrapper */
+.carousel-images {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Full-Width Images */
+.carousel-images img {
+    width: 100vw; /* Full screen width */
+    height: 100%; /* Adjust height to fit container */
+    object-fit: cover; /* Ensures images cover the full area without distortion */
+}
+
+/* Navigation Buttons */
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.carousel button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Emergency Button */
+#emergency-contact {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: #f56565; /* Red color */
+    color: white;
+    padding: 15px 20px;
+    border-radius: 25%;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+#emergency-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+#emergency-contact:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Emergency Popup Modal */
+.popup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1001; /* Ensure popup appears above all content */
+}
+
+/* Modal Content */
+.popup-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+}
+
+.popup-content h2 {
+    font-size: 2em;
+    color: #04172b; /* Dark color */
+}
+
+.popup-content button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+    background-color: #005bb5;
+}
+
+/* Close Button */
+.close-btn {
+    font-size: 30px;
+    color: #04172b;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+/* Floating Login Button */
+#login-button {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    background-color: #0073e6;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+#login-button:hover {
+    background-color: #005bb5;
+}
+
+/* Login Popup */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; 
+    height: 50%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    text-align: center;
+    max-width: 80%; /* Ensure it does not go beyond screen width */
+}
+
+/* Popup Content */
+.popup-content h2 {
+    font-size: 1.5em;
+    color: #04172b;
+}
+
+.login-options a {
+    display: block;
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #0073e6;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.login-options a:hover {
+    background-color: #0073e6;
+    color: white;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #04172b;
+}
+
+
+/* 🌟 Logo Initial Style */
+header img {
+    width: 450px; /* Initial size of logo */
+    height: auto;
+    /* No transition or sticky logo effect */
+}
+/* 🌟 Welcome Section Styles */
+.welcome-section {
+    background-color: hsl(187, 72%, 93%); /* Light blue background */
+    padding: 30px;
+    border-radius: 10px; /* Optional rounded corners */
+    text-align: center; /* Center the text */
+    max-width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center it horizontally */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+.welcome-section h2 {
+    font-size: 2em;
+    color: #04172b; /* Dark color for heading */
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.5;
+}
+.branch-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between branches */aqu
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: strech;
+}
+
+.branch-container a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Keeps text color */
+    display: block;
+    width: 30%; /* Ensures three items in a row */
+}
+
+.branch {
+    background: hsl(187, 72%, 93%);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Takes full space of the <a> tag */
+    height: 350px; /* Make the boxes bigger */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.branch img {
+    width: 100%;
+    height: 250px; /* Make the images bigger */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.branch p {
+    font-size: 1.5em; /* Bigger text */
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.branch:hover {
+    transform: scale(1.08); /* Make it pop a little */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* 🌟 Responsive Adjustments */
+@media (max-width: 1024px) {
+    .branch {
+        width: 45%; /* Two columns on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .branch {
+        width: 100%; /* Stack vertically on small screens */
+    }
+}
+
+/* 🌟 Service Boxes Padding */
+.services-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 20px;
+    padding: 20px 20px; /* Add padding to the service boxes section */
+}
+
+.service-box {
+    width: 22%; /* Each box will take 22% width of the container */
+    background-color: #e0f7fa; /* Light blue background */
+    color: #04172b; /* Text color */
+    padding: 20px; /* Padding inside each box */
+    border-radius: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hyperlink inside the box */
+.service-box a {
+    color: #04172b; /* Dark blue color for text inside the box */
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
+/* Title inside service box */
+.service-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Paragraph inside service box */
+.service-box p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Add hover effect for service boxes */
+.service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .service-box {
+        width: 45%; /* Adjust width for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .service-box {
+        width: 100%; /* Adjust width for small screens (stack vertically) */
+    }
+}
+/* Center the button on the screen */
+.appointment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Makes it vertically centered */
+}
+
+#appointment-button {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#appointment-button:hover {
+    background-color: #0056b3;
+}
+
+
+

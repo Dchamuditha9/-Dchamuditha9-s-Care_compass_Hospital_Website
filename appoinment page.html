@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make an Appointment - Care Compass Hospitals</title>
+    <link rel="stylesheet" href="appoinment.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <!-- Header (from Home Page) -->
+    <header>
+        <img src="images and media\logo image.png" alt="logo"> 
+        <div class="slogan">Restoring Health, Rebuilding Lives</div>
+
+        <nav>
+            <ul>
+                <li><a href="home page.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Appointment Form -->
+    <div class="appointment-container">
+        <h2>Make an Appointment (OPD)</h2>
+        <form action="opd_appointment_confirmation.php" method="POST">
+            
+            <!-- Name Field -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Age Field -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <!-- Branch Selection -->
+            <label for="branch">Select Branch:</label>
+            <select id="branch" name="branch" required>
+                <option value="colombo">Colombo</option>
+                <option value="kandy">Kandy</option>
+                <option value="kurunegala">Kurunegala</option>
+            </select>
+
+            <!-- Time Selection -->
+            <label for="time">Select Time:</label>
+            <select id="time" name="time" required>
+                <option value="9:00">9:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="1:00">1:00 PM</option>
+                <option value="2:00">2:00 PM</option>
+                <option value="3:00">3:00 PM</option>
+            </select>
+
+            <!-- Date Selection -->
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+
+
+            <!-- Appointment Button -->
+            <button type="submit">Make Appointment</button>
+
+            <!-- Redirect Button (for specific consultant) -->
+            <p>If you want to book a specific consultant, please</p>
+            <p> <a href="patient_login.html" class="login-btn">login here</a>.</p>
+        </form>
+    </div>
+
+    <!-- Footer (from Home Page) -->
+    <footer>
+        <p>&copy; 2025 Care Compass Hospitals. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

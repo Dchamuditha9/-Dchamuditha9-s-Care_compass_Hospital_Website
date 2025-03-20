@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Login - Care Compass Hospitals</title>
+    <link rel="stylesheet" href="patient_login.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <!-- Header (from Home Page) -->
+    <header>
+        <img src="images and media\logo image.png" alt="logo"> 
+        <div class="slogan">Restoring Health, Rebuilding Lives</div>
+
+        <nav>
+            <ul>
+                <li><a href="home page.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Patient Login Form -->
+    <div class="login-container">
+        <h2>Patient Login</h2>
+        <form action="patient_login_process.php" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" value ="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="patient_register.php">Register here</a></p>
+    </div>
+
+    <!-- Footer (from Home Page) -->
+    <footer>
+        <p>&copy; 2025 Care Compass Hospitals. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

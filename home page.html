@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARE COMPASS HOSPITALS</title>
+    <link rel="stylesheet" href="home page.css"> <!-- Link CSS -->
+</head>
+<body>
+
+<header>
+        <img src="images and media\logo gif.gif" alt="logo"> 
+        <div class="slogan">Restoring Health, Rebuilding Lives</div>
+
+    <nav>
+        <ul>
+            <li><a href="home page.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="appoinment page.html">Appointments</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="carousel">
+    <div class="carousel-images">
+        <img src="images and media\doctors.jpg" alt="Doctors">
+        <img src="images and media\mri3.jpg" alt="MRI Scan">
+        <img src="images and media\x ray.jpg" alt="X-Ray">
+        <img src="images and media\lab.jpeg" alt="Laboratory">
+        <img src="images and media\operation theater.jpg" alt="Operation Theater">
+       
+    </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+</div>
+
+<!-- Floating Emergency Contact Button -->
+<div id="emergency-contact">
+    <a href="javascript:void(0)" onclick="openEmergencyPopup()">
+        ☎️Emergency
+    </a>
+</div>
+
+<!-- Emergency Popup Modal -->
+<div id="emergency-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closeEmergencyPopup()">&times;</span>
+        <h2>Emergency Options</h2>
+        <p>Choose an option:</p>
+        <button onclick="window.location.href='tel:+941990'">Call Emergency Number (1990)</button>
+        <button onclick="alert('Ambulance request initiated. A team will contact you shortly.');">Request Ambulance</button>
+    </div>
+</div>
+
+<!-- Floating Login Button -->
+<a href="javascript:void(0)" onclick="openloginPopup()">
+<div id="login-button">🙎🏻Login</div>
+</a>
+<!-- Login Popup Modal -->
+<div id="login-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closeLoginPopup()" >&times;</span>
+        <h2>Select Login Type</h2>
+        <div class="login-options">
+            <a href="patient_login.html" id="patient-login">🔹 Patient Login / Register</a>
+            <a href="doc staff admin login.html" id="admin-login">🔹 Admin / Staff / Doctor Login</a>
+        </div>
+    </div>
+</div>
+
+<section class="welcome-section">
+    <h2>Welcome to Care Compass Hospitals</h2>
+    <p>At Care Compass Hospitals, we are committed to providing exceptional healthcare services to the people of Sri Lanka. With state-of-the-art medical facilities in Kandy, Colombo, and Kurunegala, we offer comprehensive healthcare services delivered by skilled professionals who are passionate about patient care. We believe that quality healthcare is a fundamental right, and we strive to make every patient experience comfortable and reassuring. Our hospitals are equipped with the latest technology to ensure the most accurate diagnostics and treatments available. From general consultations to emergency care, we prioritize patient well-being above all else.</p>
+</section>
+<!-- Town Branches Section -->
+<center><section class="branches">
+    <h2>Our Branches</h2>
+<div class="branch-container">
+    <a href="colombo_branch.php" class="branch-link">
+        <div class="branch">
+            <img src="images and media/colombo.jpg" alt="Colombo Branch">
+            <p>Colombo Branch</p>
+        </div>
+    </a>
+    
+    <a href="kandy_branch.php" class="branch-link">
+        <div class="branch">
+            <img src="images and media/kandy.jpg" alt="Kandy Branch">
+            <p>Kandy Branch</p>
+        </div>
+    </a>
+    
+    <a href="kurunegala_branch.php" class="branch-link">
+        <div class="branch">
+            <img src="images and media/kurunelagala town.jpg" alt="Kurunegala Branch">
+            <p>Kurunegala Branch</p>
+        </div>
+    </a>
+</div>
+
+</section>
+</center>
+
+<div class="appointment-container">
+    <a href="appoinment page.html" id="appointment-link">
+        <button id="appointment-button">Make an Appointment</button>
+    </a>
+</div>
+
+
+<center>
+<div id="services">
+    <h2>Our Services</h2> 
+</div>
+    <div class="services-section">
+        <div class="service-box">
+            <a href="javascript:void(0)" onclick="openEmergencyPopup()">
+                <h3>Emergency Care</h3>
+                <p>24/7 emergency support available.</p>
+            </a>
+        </div>
+        <div class="service-box">
+            <a href="#">
+                <h3>Consultations</h3>
+                <p>Meet expert doctors from various specialties.</p>
+            </a>
+        </div>
+        <div class="service-box">
+            <a href="#">
+                <h3>Lab Tests</h3>
+                <p>Get accurate and fast lab reports.</p>
+            </a>
+        </div>
+        <div class="service-box">
+            <a href="#">
+                <h3>Specialist Services</h3>
+                <p>Access consultations from specialists.</p>
+            </a>
+        </div>
+    </div>
+    
+    <div class="services-section">
+        <div class="service-box">
+            <a href="#">
+                <h3>Medical Imaging</h3>
+                <p>Get high-quality diagnostic imaging.</p>
+            </a>
+        </div>
+        <div class="service-box">
+            <a href="#">
+                <h3>Pharmacy</h3>
+                <p>Buy prescribed medications at the hospital.</p>
+            </a>
+        </div>
+        <div class="service-box">
+            <a href="#">
+                <h3>Health Checkups</h3>
+                <p>Book annual health checkups.</p>
+            </a>
+        </div>
+        <div class="service-box">
+            <a href="#">
+                <h3>Child Care</h3>
+                <p>Specialized care for children.</p>
+            </a>
+        </div>
+    
+    
+    <div class="services-section">
+        <div class="service-box">
+            <a href="#">
+                <h3>Wellness Programs</h3>
+                <p>Join wellness programs to maintain good health.</p>
+            </a>
+        </div>
+        <div class="service-box">
+            <a href="#">
+                <h3>Emergency Ambulance</h3>
+                <p>24/7 ambulance service available for emergencies.</p>
+            </a>
+        </div>
+        <div class="service-box">
+            <a href="#">
+                <h3>Maternity Services</h3>
+                <p>Complete care for mothers and newborns.</p>
+            </a>
+        </div>
+        <div class="service-box">
+            <a href="#">
+                <h3>Physiotherapy</h3>
+                <p>Comprehensive physiotherapy services for recovery.</p>
+            </a>
+        </div>
+    </div>
+    
+
+      </section>
+</div>      
+<img src="images and media\logo image.png" alt="logo">
+
+<section class="contact">
+    <div id="contacts">
+    <h2>Contact Us</h2>
+    </div>
+    <p>Email: info@carecompasshospitals.com</p>
+    <p>Phone: +94 123 456 789</p>
+</section>
+</center>
+
+<footer>
+    <p>&copy; 2025 Care Compass Hospitals. All rights reserved.</p>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.querySelector(".carousel-images");
+        const images = document.querySelectorAll(".carousel-images img");
+        const totalImages = images.length;
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentIndex * 100}vw)`;
+        }
+
+        // Move to the next image
+        function nextImage() {
+            currentIndex++;
+            if (currentIndex >= totalImages) {
+                currentIndex = 0; // Loop back to the first image
+            }
+            updateCarousel();
+        }
+
+        // Move to the previous image
+        function prevImage() {
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = totalImages - 1; // Loop back to the last image
+            }
+            updateCarousel();
+        }
+
+        // Auto-scroll every 5 seconds
+        let autoScroll = setInterval(nextImage, 5000);
+
+        // Navigation buttons
+        document.querySelector(".next").addEventListener("click", function () {
+            nextImage();
+            resetAutoScroll();
+        });
+
+        document.querySelector(".prev").addEventListener("click", function () {
+            prevImage();
+            resetAutoScroll();
+        });
+
+        // Reset auto-scroll timer when user manually scrolls
+        function resetAutoScroll() {
+            clearInterval(autoScroll);
+            autoScroll = setInterval(nextImage, 5000);
+        }
+    });
+</script> 
+
+<script>// Function to open the emergency popup
+    function openEmergencyPopup() {
+        document.getElementById('emergency-popup').style.display ='block';
+    }
+    
+    // Function to close the emergency popup
+    function closeEmergencyPopup() {
+        document.getElementById('emergency-popup').style.display = 'none';
+    }
+    function closeLoginPopup() {
+        document.getElementById('login-popup').style.display = 'none';  
+    }
+    
+    // Close the popup if the user clicks anywhere outside of the modal
+    window.onclick = function(event) {
+        if (event.target == document.getElementById('emergency-popup')) {
+            closeEmergencyPopup();
+        }
+    }
+    </script> 
+
+<script>  
+// Get elements
+const loginButton = document.getElementById("login-button");
+const loginPopup = document.getElementById("login-popup");
+const closeBtn = document.querySelector(".close-btn-login");
+
+// Show the popup when login button is clicked
+loginButton.addEventListener("click", function () {
+    loginPopup.style.display = "block";
+});
+
+// Close the popup when close button is clicked
+closeBtn.addEventListener("click", function () {
+    loginPopup.style.display = "none";
+});
+
+// Close the popup when clicking outside of it
+window.addEventListener("click", function (event) {
+    if (event.target === Popup) {
+        loginPopup.style.display = "none";
+    }
+});
+</script> 
+<script>
+document.getElementById("appointment-button").addEventListener("click", function () {
+    window.location.href = "appointment.html"; // Change this when you create the page
+});
+</script>
+</body>
+</html>
